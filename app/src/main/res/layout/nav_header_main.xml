@@ -1,0 +1,38 @@
+<!-- res/layout/nav_header_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#4C1AA5">
+
+    <!-- Your profile picture or icon -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvImageViewProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/profile"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvImageViewProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Jovanco"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</RelativeLayout>
